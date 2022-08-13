@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        const products = [
+            {
+                id: 3,
+                price: 127,
+                photos: [
+                    "1.jpg",
+                    "2.jpg",
+                ]
+            },
+            {
+                id: 5,
+                price: 499,
+                photos: []
+            },
+            {
+                id: 10,
+                price: 26,
+                photos: [
+                    "3.jpg"
+                ]
+            },
+            {
+                id: 8,
+                price: 78,
+            },
+        ];
+
+        let withPhoto = products.filter(function (product) {
+            return product.photos // > 0
+        })
+
+        console.log(withPhoto)
+
+        // ни как не удается отбросить пустой массив. В примере по ссылке подходящего
+        // так и не нашел, в конечном счете просмотрел решение, до такого сам не
+        // додумался бы. Переписывать готовое решение конечно же не стал, хочется
+        // добить этот вариант, можете подсказать как это сделать?
+
+        products.sort(function (a, b) {
+            if (a.price > b.price) {
+                return 1;
+            }
+            if (a.price < b.price) {
+                return -1;
+            }
+            return 0
+        })
+
+        console.log(products)
+
+    </script>
+</body>
+
+</html>
