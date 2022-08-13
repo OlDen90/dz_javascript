@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+
+        const products = [
+            {
+                id: 3,
+                price: 200,
+            },
+            {
+                id: 4,
+                price: 900,
+            },
+            {
+                id: 1,
+                price: 1000,
+            },
+        ];
+
+        products.forEach(sale => {
+            sale.price *= 1.15
+            console.log(sale.price)
+            //подскажите такой момент, программа выводит первый прайс как 229.99999999999997
+            //console.log(Number(sale.price)) - ничего в этом плане не меняет
+            //console.log(parseInt(sale.price)) - округляет в меньшую сторону - 229
+            //как справиться с этой проблемой?
+        })
+
+    </script>
+</body>
+
+</html>
