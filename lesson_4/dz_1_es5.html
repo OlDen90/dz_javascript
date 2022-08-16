@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+
+        function Product(name, price) {
+            this.name = name;
+            this.price = price;
+        }
+
+        Product.prototype.make25PercentDiscount = function () {
+            this.price = this.price - (this.price / 100 * 25)    //сначала не мог понять почему
+            //данная строка выдает ошибку, подсмотрел в решениях ДЗ что 'this' нужно прописывать
+            //не только до равно но и после
+        }
+
+        const product1 = new Product('monitor', 300);
+        product1.make25PercentDiscount();
+
+        const product2 = new Product('laptop', 1000);
+        product2.make25PercentDiscount();
+
+
+        console.log(product1)
+        console.log(product2)
+    </script>
+</body>
+
+</html>
