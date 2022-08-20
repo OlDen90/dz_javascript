@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Кнопка</button>
+    <button class="btn">Кнопка с классом btn</button>
+    <button>Кнопка</button>
+
+    <!-- Задание. Сделайте, чтобы по клику по кнопке с классом .btn появлялся
+    alert('клик') -->
+
+    <script>
+        "use strict"
+        let button = document.querySelector('.btn');
+        //ох уж эта точка... Что я только не пробовал. Оказалось первый
+        //вариант и был правильны, вот только точка нужна.
+        //Как понять, в какие моменты она нужна, а в какие нет?
+
+        button.addEventListener('click', function () {
+            alert('клик');
+        })
+    </script>
+</body>
+
+</html>
