@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Active</a>
+        </li>
+    </ul>
+
+    <!-- Задание. Найдите элемент с классом .nav-link и используя метод toggle из свойства classList
+    у элемента, добавьте или уберите класс .active. -->
+
+    <script>
+        "use strict"
+
+        let navLink = document.querySelector('.nav-link')
+        navLink.classList.toggle('active')
+        //сделать сделал, но опять не понял то ли что нужно. Отдельного
+        //класса active нет, правильно ли что 'nav-link active' стал
+        //просто 'nav-link'?
+        //Заметил, если в 24й строке к ('active') добавить точку - ('.active')
+        //тогда в результат наоборот добавится еще одно слово active,
+        //и получится - 'nav-link active .active', похоже теперь я понял
+        //для чего нужна эта точка. Хотя, а как добавить это слово но без .
+        //перед ним?...
+    </script>
+
+</body>
+
+</html>
