@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="range" min="20" max="100">
+    <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, expedita.
+    </div>
+
+    <!-- 
+    Задание. Нужно чтобы при смещении ползунка в div менялся размер шрифта.
+    1. Получите ссылку на input.
+    2. Получите ссылку на div.
+    3. Input'у поставьте прослушивание события 'input';
+        3.1 У функции-обработчика определите параметр event.
+        3.2 Значение input'а читайте из event.target.value.
+    -->
+
+
+    <script>
+        "use strict"
+
+        //Не решил.
+        //Ниже то до чего дошел.
+        //Ознакомился с решением, сам бы до такого не додумался.
+
+        let input = document.querySelector('input')
+        let div = document.querySelector('div')
+
+        el.addEventListener('input', function (event) {
+            event.target.value;     //не мог понять что с этим делать
+            //то что в самом конце нужно дописать "+ 'px'" это как контрольный выстрел в голову))
+        })
+
+    </script>
+</body>
+
+</html>
